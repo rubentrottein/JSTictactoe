@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script>
+			//Chargement de la page, lancement des Listeners
+		window.addEventListener('load', start, false);
+
+		function start(event){
+		//Stockage des ID dans un tableau
+			var tileset = ["t1","t2","t3","t4","t5","t6","t7","t8","t9"];
+		//Boucle pour ne pas répéter les getElementById neuf fois
+			for (let i=0; i<tileset.length; i++){
+		//Fonction d'affichage selon l'id de la case i du tableau ou tileset[0] => "t1"
+			document.getElementById(tileset[i]).addEventListener("click",btClick, false);
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<div id="backgrounder">
+		<div id="vidBackgrounder">
+			<!--video>
+				<source type="video/webm" src="images/after_storm.webm" media="(orientation: landscape)">
+			-->
+					<header>
+						<nav>
+							<ul>
+								<li><a href="">Accueil</a></li>
+							</ul>
+						</nav>
+					</header>
+					<h1>
+						<div>
+							Part 07 : TP
+						</div>
+						<div>
+							<span class="blue">Tic</span><span class="red">Tac</span><span class="prune">Toe</span>
+						</div>
+					</h1>
+					<main class="container">
+						<div class="ruleset">
+						<h2>Jeu du Morpion</h2>
+						<p>Le jeu consiste à aligner trois "X" sans que l'ordinateur n'aligne ses propres symboles "O"</p>
+						<h3>Options de personnalisation</h3>
+							<div class="flex between	">
+
+								<div>
+									<h4>Nom du joueur</h4>
+									<button onclick="customName()">Changer Nom</button>
+								</div>
+								<div>
+									<h4>Choix de la difficulté</h4>
+									<button onclick="customlevel(1)">Facile</button>
+									<button onclick="customlevel(2)">Normal</button>
+									<button onclick="customlevel(3)">Difficile</button>
+								</div>
+								<div>
+									<h4>Changer Background</h4>
+									<button onclick="customBackground(1)">Clover</button>
+									<button onclick="customBackground(2)">Galets</button>
+									<button onclick="customBackground(3)">Metro</button>
+									<button onclick="customBackground(4)">Ciel</button>
+									<button onclick="customVideoBackground()">test</button>
+								</div>
+							</div>
+							<br />
+							<div class="flex between">
+								<div id="playerName">Joueur 1</div>
+								<div id = "dif">
+									<span>Niveau par défaut: 
+										<span class="easy">
+											<span class='blue'>F</span><span class='red'>a</span><span class='orange'>c</span><span class='prune'>i</span><span class='salmon'>l</span><span class='red'>e</span>
+										</span>
+									</span>
+								</div>
+							</div>
+							<br>
+							<hr />
+								<div id="dialog"></div>
+							</div>
+							<div class="board">
+								<section id="board">
+									<div class="top">
+										<div class="tile" id="t1"></div>
+										<div class="tile" id="t2"></div>
+										<div class="tile" id="t3"></div>
+									</div>
+									<div class="middle">
+										<div class="tile" id="t4"></div>
+										<div class="tile" id="t5"></div>
+										<div class="tile" id="t6"></div>
+									</div>
+									<div class="bottom">
+										<div class="tile" id="t7"></div>
+										<div class="tile" id="t8"></div>
+										<div class="tile" id="t9"></div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</main>
+					<br>
+					<footer>
+						<p><a href="https://www.activconsulting">Activ'consult'ing</a></p>
+					</footer>
+				</video>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,172 @@
+*{
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+body{
+	background-color: black;
+}
+main{
+	height: 700px;
+}
+#backgrounder{
+	background: url(../images/background.jpg) fixed no-repeat;
+	background-size: cover;
+}
+header{
+	display: flex;
+	width: 100%;
+	height: 30px;
+	justify-content: space-around;
+	background:linear-gradient(black, rgba(0,0,0,0.8));
+	margin: 0px;
+	font-family: trebuchet;
+	font-weight: bold;
+	color: aliceblue;
+}
+
+footer{
+	display: flex;
+	width: 100%;
+	height: 30px;
+	justify-content: space-around;
+	background:linear-gradient(black, rgba(0,0,0,0.8));
+	font-family: trebuchet;
+	font-weight: bold;
+}
+
+footer a{
+	text-decoration: none;
+	color: darkgoldenrod;
+}
+
+nav ul{
+	list-style-type: none;
+	font-family: arial, sans-serif;
+}
+
+nav ul a{
+	color: aliceblue;
+	text-decoration: none;
+}
+
+h1{
+	display: flex;
+	width: 100%;
+	height: 1.3em;
+	justify-content: space-around;
+	background:darkslategray;
+	margin: auto 0;
+}
+
+h1 span{
+	font-family: 'tahoma', sans-serif;
+}
+#videoBackground {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  z-index : 50;
+}
+.ruleset h2{
+	font-family: arial, sans-serif;
+	background: linear-gradient(plum, darkslategray);
+	border-radius: 5px;
+	color: aliceblue;
+	text-align: center;
+}
+
+.ruleset p{
+	text-align: justify;
+	margin: 10px;
+	font-family: 'Georgia';
+}
+
+#dif{
+	font-size: 1.2em;
+}
+
+.easy{font-family: "Comic Sans MS";}
+.blue{color: skyblue;}
+.red{color: tomato;}
+.prune{color: plum;}
+.orange{color: orange;}
+.salmon{color: salmon;}
+.medium{font-size: 1.3em; color: darkblue; text-decoration: underline;}
+.hard{font-size: 1.5em; color: tomato; font-family: "courier" ;}
+.flex{display: flex;justify-content: space-around;}
+.center{text-align: center;}
+.between{text-align: center; justify-content: space-between;}
+
+.container{
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-around;
+	background: rgba(255,255,255,0.8);
+}
+
+.tile{
+	width: 150px;
+	height: 150px;
+	background-color: black;
+	color: darkred;
+	border: 5px solid aliceblue;
+	font-size: 11.5em;
+	font-family: "arial", sans-serif;
+	text-align: center;
+	line-height: 148px;
+	padding: 0;
+	margin: 0;
+}
+
+.tile:hover{
+	transform : scale(1.1);
+	transition: ease 0.5s;
+	background: rgb(255,255,255,0.3);
+}
+
+#board{
+	display: flex;
+	background: whitesmoke;
+}
+
+#dialog{
+	font-family: "arial", sans-serif;
+	background: radial-gradient(skyblue, aliceblue);
+	color: darkslategray;
+}
+
+.victoire{
+	background: linear-gradient(darkblue,darkslateblue);
+	text-align: center;
+	color: lightgreen;
+	font-weight: bold;
+	font-size: 1.5em;
+	border-radius: 5px;
+	min-height: 150px;
+	margin:auto;
+	line-height: 150px;
+}
+
+.defaite{
+	background: radial-gradient(tomato,black);
+	text-align: center;
+	color: wheat;
+	font-size: 1.5em;
+	min-height: 150px;
+	margin:auto;
+	line-height: 150px;
+}
+
+.draw{
+	background: radial-gradient(lightgreen,olive);
+	text-align: center;
+	color: darkslateblue;
+	font-size: 1.5em;
+	min-height: 150px;
+	margin:auto;
+	line-height: 150px;
+}

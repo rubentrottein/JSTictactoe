@@ -1,0 +1,71 @@
+<!doctype HTML>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>TestPage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        div{border-radius:7px;}
+        #content{width: 70%; margin: 0 auto;  }
+        h1{background: linear-gradient(steelblue, skyblue); text-align: center; border-radius: 7px;}
+        #display{border-radius: 10px;display: flex;justify-content: space-evenly;}
+        #controls{display: flex; margin: 5em; justify-content: space-around;}
+    </style>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <a href="index.html"><li>Accueil</li></a>
+                    <a href="tictactoe.html"><li>Morpion</li></a>
+                    <a href="testPage.html"><li>TestScripts</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>TestPage</h1>
+            <article id="content">
+                <p>Page de test <span onclick="password(prompt())">de</span> scripts JS</p>
+                <aside id="display">
+                    <div id="affichage1"></div>
+                    <div id="affichage2"></div>
+                    <div id="affichage3"></div>
+                </aside>
+                <aside id="controls">
+                    <button onclick="clickMe('A.B.C!')">Click Me</button>
+                    <button onclick="colorMe('darkolivegreen','lightgreen', 'aliceblue')">Color me</button>
+                </aside>
+            </article>
+        </main>
+        <script src="js/script.js"></script>
+        <script>
+            var affichage= document.getElementById("affichage");
+        var names= document.getElementsByClassName("name");
+        /****Expression Déclarative*****/
+        const direBonjour = function(prenom) {
+        const message = `Bonjour, <span class="name">${prenom} !</span><br>`;
+        return message;
+        }
+        /******Fonction Fléchée********/
+
+        const colorMe = (color, color2, color3) => {
+            document.getElementById("display").style.background = `linear-gradient(${color}, ${color2}`;
+            document.getElementById("display").style.color = `${color3}`;
+        }
+            /* Fonction fléchée sans parenthèses(Un seul argument)*/
+        const clickMe =  singIt => affichage3.innerHTML += `One two three! ${singIt}!!<br>`;
+        
+            affichage3.innerHTML += direBonjour("NewGuy", "orange"); // "Bonjour, Baptiste !"
+            affichage1.innerHTML += direBonjour("Baptiste", "indianred"); // "Bonjour, Baptiste !"
+            affichage2.innerHTML += direBonjour("Sophie", "plum"); // "Bonjour, Sophie !"
+        
+        const password = (pass) =>{
+            if (pass === "prune"){
+            document.getElementById("display").style.opacity = "0";
+            document.getElementById("display").innerHTML = "<a href='lastDays.html'>Lien</a>";
+            } else {
+                alert("Quel Talent!");
+            }
+        }
+        </script>
+    </body>
+</html>

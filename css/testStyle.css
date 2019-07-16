@@ -1,0 +1,44 @@
+div{
+    border-radius:7px;
+}
+#content{
+    width: 70%; 
+    margin: 0 auto; 
+    background: url("../images/background4.jpg") fixed;
+    background-size: cover;
+    height: 300px;
+}
+#controls{
+    background: url("../images/background3.jpg") fixed;
+    height: 100px;
+}
+#controls button{width:40%;}    
+h1{
+    background: linear-gradient(steelblue, skyblue); 
+    text-align: center; 
+    border-radius: 7px;
+}
+main{height: 600px;}
+#display{
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#controls{
+    display: flex; 
+    margin: 5em; 
+    justify-content: space-around;
+}
+table{
+    background: linear-gradient(whitesmoke, wheat );
+    border-radius: 7px;
+    border-collapse: collapse;
+}
+th{background:linear-gradient(black, darkslategrey); color: wheat;}
+td :nth-child(odd){
+background: aliceblue;
+margin: 5px;
+}
+td{border: 1px solid burlywood;}
+.pasvu  {color: indianred;    text-shadow: tomato      10px, 5px,5px, 7px; font-weight: bold;}
+.vu     {color: green;  text-shadow: greenyellow    10px, 5px,5px, 7px; font-weight: bold;}

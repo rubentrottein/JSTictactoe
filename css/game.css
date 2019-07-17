@@ -1,0 +1,7 @@
+#screen{
+    background: black;
+    border-left: grey 30px solid;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    height: 12em;
+}
